@@ -1,23 +1,22 @@
 let cart = [];
-let total = 0;
 
-function add(name, price) {
+function add(name, price, btn) {
   cart.push({ name, price });
-  total += price;
-  render();
+  save();
+  animate(btn);
 }
 
-function render() {
-  const list = document.getElementById("cart");
-  const totalEl = document.getElementById("total");
+function save() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
-  list.innerHTML = "";
+function goCheckout() {
+  window.location.href = "checkout.html";
+}
 
-  cart.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = `${item.name} - ${item.price} kr`;
-    list.appendChild(li);
-  });
-
-  totalEl.textContent = "Total: " + total + " kr";
+function animate(btn) {
+  btn.innerText = "Tilføjet ✓";
+  setTimeout(() => {
+    btn.innerText = btn.getAttribute("data-text") || "Tilføj";
+  }, 800);
 }
