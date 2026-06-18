@@ -1,96 +1,18 @@
-<!DOCTYPE html>
-<html lang="da">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kebab House</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
+<section class="info">
+  <h2>📍 Kebab House</h2>
 
-<body>
-
-<header>
-  <div class="logo">🥙 Kebab House</div>
-  <nav>
-    <a href="#menu">Menu</a>
-    <a href="#info">Info</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Ægte kebab. Hurtig levering.</h1>
-  <p>Premium street food inspireret oplevelse</p>
-</section>
-
-<section class="menu" id="menu">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80">
-    <h3>German Kebab</h3>
-    <p>79 kr.</p>
-    <button onclick="add('German Kebab',79)">Bestil nu</button>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1200&q=80">
-    <h3>Pitabrød</h3>
-    <p>45 kr.</p>
-    <button onclick="add('Pitabrød',45)">Bestil nu</button>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f9e?auto=format&fit=crop&w=1200&q=80">
-    <h3>Durum</h3>
-    <p>69 kr.</p>
-    <button onclick="add('Durum',69)">Bestil nu</button>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
-    <h3>Bowl</h3>
-    <p>89 kr.</p>
-    <button onclick="add('Bowl',89)">Bestil nu</button>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1604908177522-040f4a0f0a7b?auto=format&fit=crop&w=1200&q=80">
-    <h3>Kebab Box</h3>
-    <p>69 kr.</p>
-    <button onclick="add('Kebab Box',69)">Bestil nu</button>
-  </div>
-
-</section>
-
-<aside class="cart">
-  <h2>🛒 Kurv</h2>
-  <ul id="cart"></ul>
-  <p id="total">Total: 0 kr</p>
-</aside>
-
-<section class="info" id="info">
-  <h2>📍 Info</h2>
-  <p>Vi leverer frisk kebab i hele byen – hurtigt og varmt.</p>
+  <p>🏠 Ålekistevej 82, 2720 København</p>
+  <p>📞 31 53 16 24</p>
 
   <div class="hours">
     <h3>🕒 Åbningstider</h3>
-    <p>Man–Søn: 11:00 – 23:00</p>
+    <p>Alle dage: 11:00 – 21:00</p>
   </div>
 
-  <div class="map">
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html"
-      loading="lazy">
-    </iframe>
+  <div class="actions">
+    <a href="tel:+4531531624" class="btn">📞 Ring nu</a>
+    <a href="https://www.google.com/maps?q=Ålekistevej+82+2720+København" target="_blank" class="btn">
+      🗺️ Find vej
+    </a>
   </div>
 </section>
-
-<section class="contact" id="kontakt">
-  <h2>📞 Kontakt</h2>
-  <p>Email: info@kebabhouse.dk</p>
-  <p>Telefon: +45 12 34 56 78</p>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
