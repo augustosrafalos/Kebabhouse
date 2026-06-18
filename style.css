@@ -1,74 +1,91 @@
-<!DOCTYPE html>
-<html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebab House</title>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: white;
+}
 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+/* HEADER */
+header {
+  text-align: center;
+  padding: 25px;
+}
 
-<body>
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  letter-spacing: 5px;
+  color: gold;
+}
 
-<header>
-  <div class="logo">KEBAB HOUSE</div>
-</header>
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+}
 
-<section class="hero">
-  <h1>Street food gjort premium</h1>
-  <p>🔥 Frisklavet • 🌯 Smag der rammer • 🖤 Serveret med stil</p>
-</section>
+.hero h1 {
+  color: gold;
+  font-size: 32px;
+}
 
-<section class="menu">
+.hero p {
+  opacity: 0.8;
+}
 
-  <!-- German -->
-  <div class="card">
-    <img src="https://lh3.googleusercontent.com/proxy/OIrpxmHXNvPnP0d2dsHoZR6e6jQMZdm_-zmXYmQLBazsaSjR2NhR2khK7AavtR8Jh8DWjPcp2CLBWhZBSwofylHLJNqc5cQb2YvLvI-DxOeFEEmyYRxtUHtRer0B0hByF-y_IWjRtkI2mT0OK-wBRKIahDLouw=s680-w680-h510-rw">
-    <h2>German Kebab</h2>
-    <span class="price">79 kr</span>
-  </div>
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-  <!-- Pitabrød -->
-  <div class="card">
-    <img src="https://lh3.googleusercontent.com/proxy/HdToOA2DUdmjdgAlm9v3lr0-Wr8iTOpanNP9OSPuIcgKa_zTKPa6a6sUkK4C8Wp_pZAS5g6Xz-OUWf1uR3dIsPoznPyUS6J9PclYoTZbCYwGLm28X0lYYO-jZO4oZ-cWPDBPoqVNCCOR6qaJ4halVo5QVLapcg=s680-w680-h510-rw">
-    <h2>Pitabrød</h2>
-    <span class="price">45 kr</span>
-  </div>
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,215,0,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+}
 
-  <!-- Durum -->
-  <div class="card">
-    <img src="https://lh3.googleusercontent.com/proxy/ILJhnpYUBh6vSIVs3cFTzSv32jTpAZo9VcOsROmpFW--Khf-vbUAJmpdr3wyx4tX8zugAhxjp0czwLJmWKno5km5z1lbiTTIj0fORaW0lhPwRykxXV5af1Ku-F1CT5pngNo1GVG4uabZv8trnsBKXjhvrvLH3A=s680-w680-h510-rw">
-    <h2>Durum</h2>
-    <span class="price">69 kr</span>
-  </div>
+.card:hover {
+  transform: translateY(-6px);
+  border-color: gold;
+}
 
-  <!-- Bowl (OPDATERET) -->
-  <div class="card">
-    <img src="https://lh3.googleusercontent.com/proxy/T-fTCO9v_y_CFdgIub8uGOgRlXX72eK8X2Y0PQ8zGH2voj83Ucku973oHL_oH12jMdm6srO8-UKDLxN2spiBYoqhqsJCiMtgSuQrPU2KFd-Ka6ex067Vi8N4oFiqE6ZMXcC8DC8H_KDs7CGLdmVTzfD3BuOuFw=s680-w680-h510-rw">
-    <h2>Bowl</h2>
-    <span class="price">89 kr</span>
-  </div>
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
 
-  <!-- Kebab Box -->
-  <div class="card">
-    <img src="https://lh3.googleusercontent.com/proxy/tHK_1QgJk1iR8YYVcSaLalQagRHHGtqbScjLkDP_RHC4BwsJBUytOZtB91VzIJajOw5QyIjaUaCFsn5DWpIHvLB6kL9_zfRWDUKN-zQvASY85032KPFJUWNLz9Q13GJtRn4lsyPIj0VBZaREu1T_a2biBGsGA2Y=s680-w680-h510-rw">
-    <h2>Kebab Box</h2>
-    <span class="price">69 kr</span>
-  </div>
+.card h2 {
+  margin: 10px 0 5px;
+}
 
-</section>
+.price {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: gold;
+  font-weight: bold;
+  font-size: 16px;
+}
 
-<section class="footer">
-  <h2>📍 Kebab House</h2>
-  <p>Ålekistevej 82, 2720 København</p>
-  <p>📞 31 53 16 24</p>
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(255,215,0,0.25);
+}
 
-  <h3>🕒 Åbningstider</h3>
-  <p>Alle dage: 11:00 – 21:00</p>
+.footer h2 {
+  color: gold;
+}
 
-  <p class="slogan">“Når street food bliver til oplevelse”</p>
-</section>
-
-</body>
-</html>
+.slogan {
+  margin-top: 15px;
+  font-style: italic;
+  opacity: 0.7;
+}
