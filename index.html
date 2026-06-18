@@ -1,409 +1,96 @@
-index.html
 <!DOCTYPE html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>German Kebab</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#111;
-    color:white;
-}
-
-header{
-    background:#000;
-    padding:20px;
-    text-align:center;
-}
-
-header h1{
-    color:#ffc107;
-    font-size:48px;
-}
-
-.hero{
-    background:url("https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=80") center/cover;
-    height:500px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.hero h2{
-    background:rgba(0,0,0,.6);
-    padding:20px;
-    border-radius:10px;
-    font-size:50px;
-}
-
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
-
-.card{
-    background:#222;
-    border-radius:15px;
-    overflow:hidden;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h3{
-    margin:15px;
-}
-
-.price{
-    color:#ffc107;
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kebab House</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
 <header>
-<h1>GERMAN KEBAB</h1>
+  <div class="logo">🥙 Kebab House</div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#info">Info</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h2>Frisklavet Kebab</h2>
+  <h1>Ægte kebab. Hurtig levering.</h1>
+  <p>Premium street food inspireret oplevelse</p>
 </section>
 
-<section class="menu">
+<section class="menu" id="menu">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
-<h3>German Kebab</h3>
-<p class="price">79 kr.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80">
+    <h3>German Kebab</h3>
+    <p>79 kr.</p>
+    <button onclick="add('German Kebab',79)">Bestil nu</button>
+  </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
-<h3>Pitabrød</h3>
-<p class="price">45 kr.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1200&q=80">
+    <h3>Pitabrød</h3>
+    <p>45 kr.</p>
+    <button onclick="add('Pitabrød',45)">Bestil nu</button>
+  </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
-<h3>Durum</h3>
-<p class="price">69 kr.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f9e?auto=format&fit=crop&w=1200&q=80">
+    <h3>Durum</h3>
+    <p>69 kr.</p>
+    <button onclick="add('Durum',69)">Bestil nu</button>
+  </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
-<h3>Bowl</h3>
-<p class="price">89 kr.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+    <h3>Bowl</h3>
+    <p>89 kr.</p>
+    <button onclick="add('Bowl',89)">Bestil nu</button>
+  </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80">
-<h3>Kebab Box</h3>
-<p class="price">69 kr.</p>
-</div>
-
-</section>
-
-<footer>
-<p>📍 German Kebab</p>
-<p>📞 Ring og bestil i dag!</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="da">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>German Kebab</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#111;
-    color:white;
-}
-
-header{
-    background:#000;
-    padding:20px;
-    text-align:center;
-}
-
-header h1{
-    color:#ffc107;
-    font-size:48px;
-}
-
-.hero{
-    background:url("https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=80") center/cover;
-    height:500px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.hero h2{
-    background:rgba(0,0,0,.6);
-    padding:20px;
-    border-radius:10px;
-    font-size:50px;
-}
-
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
-
-.card{
-    background:#222;
-    border-radius:15px;
-    overflow:hidden;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h3{
-    margin:15px;
-}
-
-.price{
-    color:#ffc107;
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-<h1>GERMAN KEBAB</h1>
-</header>
-
-<section class="hero">
-<h2>Frisklavet Kebab</h2>
-</section>
-
-<section class="menu">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
-<h3>German Kebab</h3>
-<p class="price">79 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
-<h3>Pitabrød</h3>
-<p class="price">45 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
-<h3>Durum</h3>
-<p class="price">69 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
-<h3>Bowl</h3>
-<p class="price">89 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80">
-<h3>Kebab Box</h3>
-<p class="price">69 kr.</p>
-</div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1604908177522-040f4a0f0a7b?auto=format&fit=crop&w=1200&q=80">
+    <h3>Kebab Box</h3>
+    <p>69 kr.</p>
+    <button onclick="add('Kebab Box',69)">Bestil nu</button>
+  </div>
 
 </section>
 
-<footer>
-<p>📍 German Kebab</p>
-<p>📞 Ring og bestil i dag!</p>
-</footer>
+<aside class="cart">
+  <h2>🛒 Kurv</h2>
+  <ul id="cart"></ul>
+  <p id="total">Total: 0 kr</p>
+</aside>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="da">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>German Kebab</title>
+<section class="info" id="info">
+  <h2>📍 Info</h2>
+  <p>Vi leverer frisk kebab i hele byen – hurtigt og varmt.</p>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+  <div class="hours">
+    <h3>🕒 Åbningstider</h3>
+    <p>Man–Søn: 11:00 – 23:00</p>
+  </div>
 
-body{
-    background:#111;
-    color:white;
-}
-
-header{
-    background:#000;
-    padding:20px;
-    text-align:center;
-}
-
-header h1{
-    color:#ffc107;
-    font-size:48px;
-}
-
-.hero{
-    background:url("https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=80") center/cover;
-    height:500px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.hero h2{
-    background:rgba(0,0,0,.6);
-    padding:20px;
-    border-radius:10px;
-    font-size:50px;
-}
-
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
-
-.card{
-    background:#222;
-    border-radius:15px;
-    overflow:hidden;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h3{
-    margin:15px;
-}
-
-.price{
-    color:#ffc107;
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-footer{
-    background:#000;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-<h1>GERMAN KEBAB</h1>
-</header>
-
-<section class="hero">
-<h2>Frisklavet Kebab</h2>
+  <div class="map">
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html"
+      loading="lazy">
+    </iframe>
+  </div>
 </section>
 
-<section class="menu">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
-<h3>German Kebab</h3>
-<p class="price">79 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
-<h3>Pitabrød</h3>
-<p class="price">45 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
-<h3>Durum</h3>
-<p class="price">69 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
-<h3>Bowl</h3>
-<p class="price">89 kr.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80">
-<h3>Kebab Box</h3>
-<p class="price">69 kr.</p>
-</div>
-
+<section class="contact" id="kontakt">
+  <h2>📞 Kontakt</h2>
+  <p>Email: info@kebabhouse.dk</p>
+  <p>Telefon: +45 12 34 56 78</p>
 </section>
 
-<footer>
-<p>📍 German Kebab</p>
-<p>📞 Ring og bestil i dag!</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
