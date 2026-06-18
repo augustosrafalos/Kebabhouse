@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebab Deluxe Premium</title>
+  <title>Kebab Deluxe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,14 +11,11 @@
 
 <header>
   <div class="logo">🥙 KEBAB DELUXE</div>
-  <button class="cart-btn" onclick="openCart()">
-    🛒 Kurv (<span id="cart-count">0</span>)
-  </button>
 </header>
 
 <section class="hero">
-  <h1>Premium kebab leveret hurtigt</h1>
-  <p>🔥 Frisklavet • 🌯 Street food • 🚀 Hurtig levering</p>
+  <h1>Street food gjort premium</h1>
+  <p>🔥 Frisklavet • 🌯 Smag der rammer • 🖤 Serveret med stil</p>
 </section>
 
 <section class="menu">
@@ -26,41 +23,36 @@
   <div class="card">
     <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
     <h2>German Kebab</h2>
-    <p>79 kr</p>
-    <button onclick="addItem('German Kebab',79)">Bestil nu</button>
+    <span class="price">79 kr</span>
   </div>
 
   <div class="card">
     <img src="https://images.unsplash.com/photo-1604908177522-040f4a0f0a7b">
     <h2>Pitabrød</h2>
-    <p>45 kr</p>
-    <button onclick="addItem('Pitabrød',45)">Bestil nu</button>
+    <span class="price">45 kr</span>
   </div>
 
   <div class="card">
     <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
     <h2>Durum</h2>
-    <p>69 kr</p>
-    <button onclick="addItem('Durum',69)">Bestil nu</button>
+    <span class="price">69 kr</span>
   </div>
 
   <div class="card">
     <img src="https://images.unsplash.com/photo-1544025162-d76694265947">
     <h2>Bowl</h2>
-    <p>89 kr</p>
-    <button onclick="addItem('Bowl',89)">Bestil nu</button>
+    <span class="price">89 kr</span>
   </div>
 
   <div class="card">
     <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
     <h2>Kebab Box</h2>
-    <p>69 kr</p>
-    <button onclick="addItem('Kebab Box',69)">Bestil nu</button>
+    <span class="price">69 kr</span>
   </div>
 
 </section>
 
-<section class="info">
+<section class="footer">
   <h2>📍 Kebab Deluxe</h2>
   <p>Ålekistevej 82, 2720 København</p>
   <p>📞 31 53 16 24</p>
@@ -68,20 +60,8 @@
   <h3>🕒 Åbningstider</h3>
   <p>Alle dage: 11:00 – 21:00</p>
 
-  <a class="btn" href="tel:+4531531624">Ring nu</a>
-  <a class="btn" target="_blank" href="https://www.google.com/maps?q=Ålekistevej+82+København">Find vej</a>
+  <p class="slogan">“Når street food bliver til oplevelse”</p>
 </section>
-
-<!-- CART -->
-<div id="cart" class="cart">
-  <h2>🛒 Din kurv</h2>
-  <div id="cart-items"></div>
-  <h3>Total: <span id="total">0</span> kr</h3>
-  <button onclick="checkout()">Checkout</button>
-  <button onclick="closeCart()">Luk</button>
-</div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
