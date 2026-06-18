@@ -1,89 +1,31 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a1a, #000);
-  color: white;
-}
+ 
 
-header {
-  text-align: center;
-  padding: 30px;
-}
+body { margin: 0; font-family: Arial, sans-serif; background: radial-gradient(circle at top, #1a1a1a, #000); color: white; } 
 
-.logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 50px;
-  letter-spacing: 5px;
-  color: gold;
-}
+/* HEADER */ header { text-align: center; padding: 25px; } 
 
-.tagline {
-  opacity: 0.7;
-}
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 5px; color: gold; } 
 
-.hero {
-  text-align: center;
-  padding: 20px;
-  font-size: 16px;
-}
+/* HERO */ .hero { text-align: center; padding: 30px 20px; } 
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+.hero h1 { color: gold; font-size: 32px; } 
 
-.card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,215,0,0.15);
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.3s;
-}
+.hero p { opacity: 0.8; } 
 
-.card:hover {
-  transform: translateY(-6px);
-  border-color: gold;
-}
+/* MENU */ .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; } 
 
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,215,0,0.15); border-radius: 12px; overflow: hidden; text-align: center; transition: 0.3s; } 
 
-.card h2 {
-  margin: 10px 0;
-}
+.card:hover { transform: translateY(-6px); border-color: gold; } 
 
-.card span {
-  display: block;
-  color: gold;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
+.card img { width: 100%; height: 150px; object-fit: cover; } 
 
-.footer {
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 1px solid rgba(255,215,0,0.2);
-}
+.card h2 { margin: 10px 0 5px; } 
 
-.slogan {
-  margin-top: 10px;
-  font-style: italic;
-  opacity: 0.7;
-}
-.footer-image {
-  margin-top: 20px;
-  text-align: center;
-}
+.price { display: inline-block; margin-bottom: 15px; color: gold; font-weight: bold; font-size: 16px; } 
 
-.footer-image img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,215,0,0.2);
-}
+/* FOOTER */ .footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255,215,0,0.25); } 
+
+.footer h2 { color: gold; } 
+
+.slogan { margin-top: 15px; font-style: italic; opacity: 0.7; 
